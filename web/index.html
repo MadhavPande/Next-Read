@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Next Read · Book recommendations</title>
+  <meta name="description" content="Find your next book by mood, by a book you loved, or from a few favourites. Built on 6 million Goodreads ratings.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%239b3d2f'/%3E%3Cpath d='M9 8h10a4 4 0 0 1 4 4v12H13a4 4 0 0 1-4-4z' fill='%23fff8ee'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://images.gr-assets.com">
+  <link rel="preconnect" href="https://covers.openlibrary.org">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a href="#/" class="logo" aria-label="Next Read home">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span class="logo-text">Next Read</span>
+      </a>
+      <div id="header-search" class="header-search"></div>
+      <nav class="nav" aria-label="Main">
+        <a href="#/" data-nav="home">Moods</a>
+        <a href="#/for-you" data-nav="for-you">For you <span class="nav-count" id="loved-count" hidden></span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="view" class="wrap view" tabindex="-1">
+    <p class="status">Opening the library…</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>
+        Built on <a href="https://github.com/zygmuntz/goodbooks-10k" target="_blank" rel="noopener">goodbooks-10k</a>
+        (Goodreads ratings up to 2017, CC BY-SA 4.0) and <a href="https://openlibrary.org" target="_blank" rel="noopener">Open Library</a>
+        (newer books). Not affiliated with Goodreads or Open Library. <a href="#/about">How it works</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

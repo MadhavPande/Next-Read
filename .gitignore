@@ -1,0 +1,8 @@
+# Python environment and caches
+.venv/
+__pycache__/
+
+# Downloaded data (re-created by fetch_data.py)
+data/raw/
+data/openlibrary_new.json
+data/*.log
