@@ -1,0 +1,5 @@
+# Netlify: the website is pre-built by build.py into site/, so serve that
+# folder as-is with no build step.
+[build]
+  publish = "site"
+  command = ""
